@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Navigation Menu with JavaScript</title>
+  </head>
+  <body>
+    <div class="mobile-nav">
+      <i class="fas fa-bars mobile-menu-btn"></i>
+      <ul class="mobile-menu slide-out display-none">
+        <li>Home</li>
+        <li>Products</li>
+        <li>Contact Us</li>
+        <li>About</li>
+      </ul>
+    </div>
+    <nav>
+      <div class="nav-wrap">
+        <a href="#">
+          <i class="fab fa-html5"></i>
+        </a>
+        <div class="nav-right">
+          <ul class="desktop-menu">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Contact Us</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bg">
+      <div class="bg-overlay"></div>
+      <video class="desktop-video" loop autoplay muted src="video.mp4" alt=""></video>
+      <video class="mobile-video" loop autoplay muted src="video-mobile.mp4" alt=""></video>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
